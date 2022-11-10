@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PredicTor</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,700&idisplay=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+   
+</head>
+<body>
+    <!--Home-->
+
+    <div class="class">
+        <nav>
+            <h2 class="logo">PredicT<span>or</span></h2>
+            <ul>
+                <li><a href="#demo">Demo</a></li>
+                <li><a href="#manual">Manual Guide</a></li>
+                <li><a href="#video">Video Guide</a></li>
+                <li><a href="#faq">FaQ</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <h4>Hello, A tool for</h4>
+            <h2>Handwritten <span>Digit</span> Recognition</h2>
+            <!--<h2>Handwritten Digit Recognition</h2>-->
+        </div>
+    </div>
+
+    <!--manual-->
+
+    <div class="manual" id="manual">
+        <div class="about-text">
+            <h2>Steps to be Followed</h2>
+            <p>To recognize the handwritten digits we need to follow certain steps.<p>
+            <p>Step 1 : Click on the demo button </p>
+            <p>Step 2 : Upload your hand written image as a Image</p>
+            <p>Step 3 : Click on predict </p>
+            <p>Step 4 : Wait for sometime, as it is getting trained on the backend </p>
+            <p>Step 5 :  Wola !.. You will get the accurate predicted result</p>
+            <br>
+            <button type="button" class="btn1"><a href="#demo">Let's Predict</a></button>
+        </div>
+    </div>
+    
+    <!--video-guide-->
+    
+    <div class="video-guide" id="video">
+        <h2>How does it works....</h2>
+        <div class="row">
+            <div class="img">
+                <img src="../static/img.jpg" width="70%">
+            </div>
+        </div>
+    </div>
+
+    <!--Demo-->
+
+    <div class="demo" id="demo">
+        <h2>Prediction</h2>
+    </div>
+
+    <!--FaQ-->
+    
+    <div class="Faq" id="faq">
+        <div class="accordion" >
+            <h2>FAQs</h2>
+            <div class="contentBx">
+                <div class="label">How to use predict my hand written digit ?</div>
+                <div class="content">
+                    <p>
+                        Upload any handwritten digit image, It will predict and produce the accurate output.
+                    </p>
+                </div> 
+            </div>
+    
+            <div class="contentBx">
+                <div class="label">How many files I can upload at a time ?</div>
+                <div class="content">
+                    <p>
+                        You can upload only one image at a time.
+                    </p>    
+                </div> 
+            </div>
+    
+            <div class="contentBx">
+                <div class="label">Is it beginner friendly ?</div>
+                <div class="content">
+                    <p>
+                        Yes, You can use this tool with this by just following simple steps.
+                    </p>
+                </div> 
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+
+    <footer>
+        <p>Handwritten Digit Recognition</p>
+        <p>For more, Follow us on</p>
+        <div class="social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-dribbble"></i></a>
+        </div>
+        <p class="end">CopyRight By PredicTor</p>
+    </footer>
+   
+    <script>
+        const accordion = document.getElementsByClassName('contentBx');
+        for ( i = 0; i<accordion.length; i++ ){
+            accordion[i].addEventListener('click',function(){
+                this.classList.toggle('active')
+            })
+        }
+    </script>
+</body>
+</html>
